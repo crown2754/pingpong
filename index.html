@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="乒乓 — 桌球小說與世界觀設定">
+  <title>乒乓</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    :root {
+      --theme-color: #c45c26;
+      --theme-color-dark: #a34a1c;
+    }
+
+    body {
+      font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", "Segoe UI", sans-serif;
+    }
+
+    .app-name-link img {
+      display: none;
+    }
+
+    .sidebar {
+      width: 18rem;
+    }
+
+    .sidebar-nav > ul > li > p {
+      font-weight: 600;
+      color: var(--theme-color);
+      margin: 1.2em 0 0.4em;
+      font-size: 0.85em;
+      text-transform: none;
+      letter-spacing: 0.05em;
+    }
+
+    .markdown-section {
+      max-width: 46rem;
+      line-height: 1.85;
+      font-size: 1.05rem;
+    }
+
+    .markdown-section h1 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid var(--theme-color);
+      padding-bottom: 0.4em;
+    }
+
+    .markdown-section blockquote {
+      border-left-color: var(--theme-color);
+      background: #faf8f6;
+      padding: 0.6em 1em;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .markdown-section table {
+      font-size: 0.95rem;
+    }
+
+    .pagination-item-title {
+      font-family: inherit;
+    }
+
+    @media (max-width: 768px) {
+      .markdown-section {
+        padding: 1rem;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="app">載入中…</div>
+  <script>
+    window.$docsify = {
+      name: '乒乓',
+      repo: 'crown2754/pingpong',
+      homepage: 'README.md',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      auto2top: true,
+      autoHeader: true,
+      relativePath: true,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+      },
+      notFoundPage: true,
+      search: {
+        paths: 'auto',
+        placeholder: '搜尋章節、人物、品牌…',
+        noData: '找不到結果',
+        depth: 3,
+      },
+      pagination: {
+        previousText: '← 上一頁',
+        nextText: '下一頁 →',
+        crossChapter: true,
+        crossChapterText: true,
+      },
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+</body>
+</html>
